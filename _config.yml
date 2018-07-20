@@ -18,6 +18,7 @@ github_username:  mattacraig
 # Build settings
 markdown: kramdown
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
 sass: 
   sass_dir: _sass
