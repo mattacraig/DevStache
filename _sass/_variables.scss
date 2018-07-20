@@ -1,8 +1,10 @@
 // Color Pallate
 $main-bg: #eee;
 $secondary-bg: #445C6D;
+$overlay-bg: rgba(0, 0, 0, .5);
 $main-type-color: #222;
 $secondary-type-color: $secondary-bg;
+$tertiary-type-color: $main-bg;
 
 // Typography
 $primary-font-stack: 'Raleway,' sans-serif;

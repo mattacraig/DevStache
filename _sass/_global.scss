@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+nav .container,
+footer {
+  display: flex;
+}
+
+body {
+  font-family: $primary-font-stack;
+  flex-direction: column;
+  background: $main-bg;
+  color: $main-type-color;
+  position: relative;
+  line-height: calc(100%*1.618);
+}
+
+.content {
+  flex: 1;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+
+header,
+footer {
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat' sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+

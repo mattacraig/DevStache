@@ -1,4 +1,14 @@
 ---
 ---
 
+//=====================
+// import global styles
+//=====================
 @import 'variables';
+@import 'global';
+
+//==================
+// import partials
+//==================
+@import 'header';
+@import 'footer';

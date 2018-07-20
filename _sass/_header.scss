@@ -1,0 +1,51 @@
+header {
+  height: 60vh;
+  display: flex;
+  background-image: url("https://picsum.photos/1600/900?image=0");
+  background-color: $overlay-bg;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: $secondary-bg;
+  opacity: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 3rem;
+  background: $secondary-bg;
+  z-index: 1;
+}
+
+.main-heading {
+  color: $main-bg;
+}
+
+nav .container {
+  height: 100%;
+  align-items: center;
+}
+
+.brand {
+  margin-right: auto;
+}
+
+nav .container a {
+  color: #eee;
+}
+
+nav .container a:not(.brand) {
+  margin-left: 0.5rem;
+}
