@@ -25,9 +25,10 @@ These are Headings:
 
 ######Heading
 
+
 this is some sample code:
 
-``` Javascript
+<!-- ``` Javascript
 
 window.addEventListener('scroll', () => {
   let scrolled = window.pageYOffset || document.body.scrollTop,
@@ -45,4 +46,22 @@ window.addEventListener('scroll', () => {
 console.log('this works');
 
 ```
+ -->
 
+{%highlight javascript%}
+
+	window.addEventListener('scroll', () => {
+		let scrolled = window.pageYOffset || document.body.scrollTop,
+	  overlayOpacity;
+		const overlay = document.querySelector('.overlay'),
+	  fadeUntil = overlay.offsetHeight;
+
+		if(scrolled <= fadeUntil) {
+	  	overlayOpacity = (scrolled/fadeUntil) * 1;
+		}
+			overlay.style.opacity = overlayOpacity;
+		});
+
+	console.log('this works');
+
+{%endhighlight%}
