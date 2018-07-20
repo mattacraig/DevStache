@@ -13,17 +13,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, a
 
 These are Headings:
 
-#Heading
+# Heading
 
-##Heading
+## Heading
 
-###Heading
+### Heading
 
-####Heading
+#### Heading
 
-#####Heading
+##### Heading
 
-######Heading
+###### Heading
 
 
 this is some sample code:
