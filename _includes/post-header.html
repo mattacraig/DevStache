@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-	<header class="post-header">
+	<header class="post-header" {% if page.image %}style="background-image: url('/img/{{page.image}}')"{% endif %}>
 	  <nav>
 	    <div class="container">
-	      <a href="#0" class="brand"><span>//</span>MattCraig</a>
+	      <a href="{{site.url}}" class="brand"><span></span>//DevStache</a>
 	      <a href="#0">Let's Learn</a>
 	      <a href="#0">Let's Build</a>
 	      <a href="#0">The Glossary</a>
