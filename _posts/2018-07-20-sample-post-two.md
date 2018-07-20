@@ -15,6 +15,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, a
 
 {%highlight javascript%}
 
-console.log('does this work?');
+	console.log('does this work?');
 
 {%endhighlight%}
