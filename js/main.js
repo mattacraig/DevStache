@@ -4,7 +4,7 @@
 const addOpacity = () => {
 	let scrolled 		= window.pageYOffset || document.body.scrollTop,
       overlayOpacity;
-      
+
 	const overlay 	= document.querySelector('.overlay');
 	const fadeUntil = overlay.offsetHeight;
 	
@@ -20,9 +20,10 @@ const reduceNavHeight = () => {
 
 	const header 			 = document.querySelector('header'),
 				nav 				 = document.querySelector('nav'),
-				headerHeight = header.offsetHeight;
+				headerHeight = header.offsetHeight,
+				navHeight    = nav.offsetHeight;
 
-	if (scrolled >= headerHeight) {
+	if (scrolled >= (headerHeight - navHeight)) {
 		nav.classList.add('nav-scrolled');
 	}else if (scrolled < headerHeight) {
 		nav.classList.remove('nav-scrolled');
