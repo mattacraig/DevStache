@@ -11,9 +11,10 @@
 	  <nav class="main-nav">
 	    <div class="container">
 	      <a href="{{site.url}}" class="brand">//DevStache</a>
-	      <a href="#0">Let's Learn</a>
-	      <a href="#0">Let's Build</a>
-	      <a href="#0">The Glossary</a>
+				{% for category in site.categories %}
+					<a href="{{baseurl}}/categories/{{category[0] | downcase}}">{{category[0]}}</a>
+				{% endfor %}	      
+				<a href="#0">The Glossary</a>
 	    </div>
 	  </nav>
 	  

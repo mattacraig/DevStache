@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>{{site.title}} | {{page.title}}</title>
+	<title>{{site.title}} | Let's Learn {{page.title}}</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Raleway" rel="stylesheet"> 
 	<link rel="stylesheet" href="/css/main.css">
 </head>
@@ -11,14 +11,15 @@
 	  <nav>
 	    <div class="container">
 	      <a href="{{site.url}}" class="brand"><span></span>//DevStache</a>
-	      <a href="#0">Let's Learn</a>
-	      <a href="#0">Let's Build</a>
-	      <a href="#0">The Glossary</a>
+				{% for category in site.categories %}
+					<a href="{{baseurl}}/categories/{{category[0] | downcase}}">{{category[0]}}</a>
+				{% endfor %}	      
+				<a href="#0">The Glossary</a>
 	    </div>
 	  </nav>
 	  
 	  <div class="main-heading">
-	    <h1>Posts Under '{{page.category}}'</h1>
+	    <h1>Let's Learn '{{page.category}}'</h1>
 	  </div>
 	  
 	  <div class="overlay"></div>
