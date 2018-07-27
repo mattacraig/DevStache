@@ -1,0 +1,11 @@
+{% include category-header.html %}
+<main class="container content">
+  {% for post in site.categories[page.category]  %}
+	  <article>
+      <h2>{{post.title}}</h2>
+      {{post.content | truncatewords: 50}}
+      <a href="{{post.url | absolute_url}}">Continue Reading</a>
+    </article>
+  {% endfor %}
+</main>
+{% include footer.html %}
