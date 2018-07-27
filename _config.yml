@@ -26,4 +26,7 @@ sass:
 collections:
   category:
     output: true
-
+_options:
+  code_block:
+    tab_size: 2
+    show_gutter: true
