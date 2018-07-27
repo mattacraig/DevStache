@@ -7,7 +7,17 @@ main p {
 }
 
 article {
-  margin-bottom: 3rem;
+	margin-bottom: 3rem;
+	display: flex;
+}
+
+.post-thumbnail {
+	max-width: 15%;
+
+}
+
+.post-preview {
+	margin-left: 1rem;
 }
 
 article h2 {

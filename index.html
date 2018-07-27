@@ -4,9 +4,13 @@ layout: default
 <main class="container content">
   {% for post in site.posts %}
     <article>
-      <h2>{{post.title}}</h2>
-      {{post.content | truncatewords: 50}}
-      <a href="{{post.url}}">Continue Reading</a>
+      <img src="/img/{{post.image}}" alt="" class="post-thumbnail">
+      <div class="post-preview">
+        <h2>{{post.title}}</h2>
+        {{post.content | truncatewords: 50}}
+        <a href="{{post.url}}">Continue Reading</a>
+      </div>
+      
     </article>
   {% endfor %}
 </main>
