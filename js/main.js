@@ -34,4 +34,3 @@ const reduceNavHeight = () => {
 window.addEventListener('scroll', addOpacity, false);
 window.addEventListener('scroll', reduceNavHeight, false);
 
-console.log('this works');
