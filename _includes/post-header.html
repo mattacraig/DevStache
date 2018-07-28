@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>{{site.title}} | {{page.title}}</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Raleway" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
-	<header class="post-header" {% if page.image %}style="background-image: url('/img/{{page.image}}')"{% endif %}>
-	  <nav>
-	    <div class="container">
-	      <a href="{{site.url}}" class="brand"><span></span>//DevStache</a>
+	<header class="post-header" {% if page.image %}style="background-image: url('/img/{{page.image}}')" {% endif %}>
+		<nav>
+			<div class="container">
+				<a href="{{site.url}}" class="brand">
+					<span></span>//DevStache</a>
 				{% for category in site.categories %}
-					<a href="{{baseurl}}/categories/{{category[0] | downcase}}">{{category[0]}}</a>
+				<a href="{{baseurl}}/categories/{{category[0] | downcase}}">{{category[0]}}</a>
 				{% endfor %}
-	      <a href="#0">About</a>
-	    </div>
-	  </nav>
-	  
-	  <div class="main-heading">
-	    <h1>{{page.title}}</h1>
-	    <p>Written on {{page.date | date: "%B %e, %Y"}}</p>
-	  </div>
-	  
-	  <div class="overlay"></div>
+				<a href="#0">About</a>
+			</div>
+		</nav>
+
+		<div class="main-heading">
+			<h1>{{page.title}}</h1>
+			{{page.intro}}
+			<small>Written on {{page.date | date: "%B %e, %Y"}}</small>
+		</div>
+
+		<div class="overlay"></div>
 	</header>
