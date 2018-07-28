@@ -26,7 +26,7 @@ nav {
   height: 5rem;
   background: $secondary-bg;
   z-index: 1;
-  transition: $transition-timing height;
+  transition: $transition-timing height, $transition-timing box-shadow;
 }
 
 .nav-scrolled {
