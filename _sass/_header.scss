@@ -1,7 +1,6 @@
 header {
   height: 80vh;
   display: flex;
-  // background-image: url("https://picsum.photos/1600/900?image=0");
   background-color: $overlay-bg;
   background-blend-mode: overlay;
   background-size: cover;
@@ -27,12 +26,12 @@ nav {
   height: 5rem;
   background: $secondary-bg;
   z-index: 1;
-  transition: 0.3s height;
+  transition: $transition-timing height;
 }
 
 .nav-scrolled {
   height: 3.5rem;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px 2px $shadow;
 }
 
 .main-heading {
@@ -46,11 +45,17 @@ nav {
   margin-bottom: 2rem;
 }
 
+.main-heading small {
+  margin-top: 1rem;
+  display: block;
+  opacity: 0.5;
+}
+
 .most-recent-link {
   background: $secondary-bg;
   color: $main-bg;
   padding: 1.3rem;
-  transition: 0.3s background;
+  transition: $transition-timing background;
 }
 
 .most-recent-link:hover {
@@ -71,7 +76,7 @@ nav .container {
 }
 
 nav .container a {
-  color: #eee;
+  color: $main-bg;
 }
 
 nav .container a:not(.brand) {

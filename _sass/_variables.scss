@@ -1,11 +1,15 @@
-// Color Pallate
+// Color Palette
 $main-bg: #eee;
 $secondary-bg: #445C6D;
 $overlay-bg: rgba(0, 0, 0, .5);
 $main-type-color: #222;
 $secondary-type-color: $secondary-bg;
 $tertiary-type-color: $main-bg;
+$shadow: rgba(0, 0, 0, 0.7);
 
 // Typography
 $primary-font-stack: 'Raleway', sans-serif;
 $secondary-font-stack: 'Montserrat', sans-serif;
+
+// Misc.
+$transition-timing: 0.3s;
