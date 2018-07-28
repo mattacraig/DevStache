@@ -17,15 +17,15 @@ github_username:  mattacraig
 
 # Build settings
 markdown: kramdown
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
 sass: 
   sass_dir: _sass
   style: compressed
-collections:
-  category:
-    output: true
+
 _options:
   code_block:
     tab_size: 2

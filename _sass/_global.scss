@@ -18,7 +18,7 @@ body {
   background: $main-bg;
   color: $main-type-color;
   position: relative;
-  line-height: calc(100%*1.618);
+  line-height: calc(100% * 1.618);
 }
 
 .content {
@@ -29,7 +29,6 @@ body {
   width: 80vw;
   margin: 0 auto;
 }
-
 
 header,
 footer {
@@ -47,3 +46,25 @@ a {
   text-decoration: none;
 }
 
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #828282;
+  border-radius: 3px;
+  background-color: #eef;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

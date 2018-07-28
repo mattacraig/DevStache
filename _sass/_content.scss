@@ -3,21 +3,20 @@ main {
 }
 
 main p {
-	padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 article {
-	margin-bottom: 3rem;
-	display: flex;
+  margin-bottom: 3rem;
+  display: flex;
 }
 
 .post-thumbnail {
-	max-width: 15%;
-
+  max-width: 15%;
 }
 
 .post-preview {
-	margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 article h2 {
@@ -28,14 +27,18 @@ article a {
   color: $secondary-type-color;
 }
 
-pre {
-	background: #222;
-	width: 60%;
-	height:auto;
-	margin: 0 auto;
-	color: #eee;
-	border-radius: 3px;
-	overflow: auto;
-	padding: 1rem 1rem 2rem;
-	margin-bottom: 1rem;
+article a:hover {
+  text-decoration: underline;
 }
+
+// pre {
+// 	background: #222;
+// 	width: 60%;
+// 	height:auto;
+// 	margin: 0 auto;
+// 	color: #eee;
+// 	border-radius: 3px;
+// 	overflow: auto;
+// 	padding: 1rem 1rem 2rem;
+// 	margin-bottom: 1rem;
+// }

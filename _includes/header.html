@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>{{site.title}}</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Raleway" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
-	<header>
-	  <nav class="main-nav">
-	    <div class="container">
-	      <a href="{{site.url}}" class="brand">//DevStache</a>
+	<header style="background-image: url('/img/{{site.posts.first.image}}')">
+		<nav class="main-nav">
+			<div class="container">
+				<a href="{{site.url}}" class="brand">//DevStache</a>
 				{% for category in site.categories %}
-					<a href="{{baseurl}}/categories/{{category[0] | downcase}}">{{category[0]}}</a>
-				{% endfor %}	      
+				<a href="{{baseurl}}/categories/{{category[0] | downcase}}">{{category[0]}}</a>
+				{% endfor %}
 				<a href="#0">The Glossary</a>
-	    </div>
-	  </nav>
-	  
-	  <div class="main-heading">
-	    <h1>Let's add unecessary stuff to the web together.</h1>
-	  </div>
-	  
-	  <div class="overlay"></div>
+			</div>
+		</nav>
+
+		<div class="main-heading">
+			<h1>{{site.posts.first.title}}</h1>
+			{{site.posts.first.content | truncatewords: 50}}
+			<div class="link-container">
+				<a href="{{site.posts.first.url}}" class="most-recent-link">Continue Reading</a>
+			</div>
+		</div>
 	</header>

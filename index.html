@@ -2,7 +2,7 @@
 layout: default
 ---
 <main class="container content">
-  {% for post in site.posts %}
+  {% for post in site.posts offset:1 %}
     <article>
       <img src="/img/{{post.image}}" alt="" class="post-thumbnail">
       <div class="post-preview">
