@@ -1,6 +1,6 @@
 {% include category-header.html %}
 <main class="container content">
-  {% for post in site.categories[page.category] %}
+  {% for post in site.categories[page.category] offset:1 %}
 	  <article>
       <img src="/img/{{post.image}}" alt="" class="post-thumbnail">
       <div class="post-preview">
