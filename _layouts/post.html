@@ -6,7 +6,7 @@ comments: true
 <main class="container content">
 	{{page.content}}
 </main>
-{% if page.comments %}
+
 <div id="disqus_thread"></div>
 <script>
   var disqus_shortname = '{{ site.disqus_shortname }}';
@@ -24,5 +24,4 @@ comments: true
   })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endif %}
 {%include footer.html%}
