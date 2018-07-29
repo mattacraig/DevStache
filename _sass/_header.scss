@@ -34,6 +34,10 @@ nav {
   box-shadow: 0 0 20px 2px $shadow;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .main-heading {
   color: $main-bg;
   width: 60vw;

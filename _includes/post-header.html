@@ -17,7 +17,7 @@
 				{% for category in site.categories %}
 				<a href="{{baseurl}}/categories/{{category[0] | downcase}}">{{category[0]}}</a>
 				{% endfor %}
-				<a href="{{baseurl}}/about.html">About</a>
+				<a href="{{baseurl}}/about.html" {% if page.title == "About Me" %} class="active" {% endif %}>About</a>
 			</div>
 		</nav>
 
