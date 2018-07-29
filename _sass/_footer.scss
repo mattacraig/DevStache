@@ -1,6 +1,15 @@
 footer {
   text-align: center;
-  height: 3rem;
+  height: 4rem;
   background: $secondary-bg;
   color: $tertiary-type-color;
+}
+
+.heart {
+  color: $heart;
+}
+
+footer a {
+  color: $main-bg;
+  text-decoration: underline;
 }
