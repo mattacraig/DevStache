@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Let's add unnecessary stuff to the web together.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jolly-dove.cloudvent.net" # the base hostname & protocol for your site
-shortname: devstache
+disqus_shortname: devstache
 twitter_username: jekyllrb
 github_username:  mattacraig
 
